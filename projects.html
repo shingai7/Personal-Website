@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projects | Shingai Choto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAVBAR: identical on every page -->
+    <nav class="navbar navbar-expand-lg site-nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Shingai Choto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience &amp; Education</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button id="themeToggle" class="theme-toggle" type="button">Dark mode</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <main class="container">
+      <h1 class="page-title mb-4">Projects</h1>
+      <p class="lead mb-4">A selection of my work. More on <a href="https://github.com/shingai7" target="_blank" rel="noopener">GitHub</a>.</p>
+
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+        <div id="filters" class="filter-bar" role="group" aria-label="Filter projects by category"></div>
+        <input id="projectSearch" class="form-control project-search" type="search" placeholder="Search projects" aria-label="Search projects">
+      </div>
+
+      <div id="projects" class="row g-4"></div>
+      <p id="projectStatus" class="mt-4 text-muted" role="status"></p>
+    </main>
+
+    <footer class="site-footer text-center">
+      <div class="container">&copy; 2026 Shingai Choto</div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-brand" type="button" aria-label="Back to top">Top</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

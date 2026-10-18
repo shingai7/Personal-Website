@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Shingai Choto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- NAVBAR: identical on every page -->
+    <nav class="navbar navbar-expand-lg site-nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Shingai Choto</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="experience.html">Experience &amp; Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button id="themeToggle" class="theme-toggle" type="button">Dark mode</button></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <main class="container">
+      <div class="row align-items-center g-5 hero">
+        <div class="col-md-5 text-center">
+          <img class="profile-img" src="images/profile.png" alt="Portrait of Shingai Choto">
+        </div>
+        <div class="col-md-7">
+          <p id="greeting" class="greeting mb-2">Welcome to my portfolio</p>
+          <h1 class="display-4 page-title">Shingai Choto</h1>
+          <p class="lead mt-4">
+            I am pursuing an accelerated BBA and MS in Management Information Systems and Management Information Technology at the University of Oklahoma, with an expected graduation of May 2027 and a 3.97 GPA. I specialize in data analytics and database management, turning enterprise data into clear insights with Power BI, SQL, and ETL workflows. My experiences across Zimbabwe, Swaziland, and the United States have shaped my global perspective and fueled my passion for the IT industry. I believe technology can be a powerful force for good, and I am driven to make a meaningful impact.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-8">
+          <div class="goals-box h-100">
+            <h2 class="h5 mb-2">Career goals and interests</h2>
+            <p class="mb-0">I am aiming for a career in data analytics, business intelligence, and IT consulting, where I can partner with operational teams, align technology with business needs, and present findings to leadership. I am also interested in venture capital and emerging technology.</p>
+          </div>
+        </div>
+        <div class="col-md-4 d-flex align-items-center justify-content-md-end">
+          <a class="btn btn-brand btn-lg" href="projects.html" role="button">View My Projects</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer text-center">
+      <div class="container">&copy; 2026 Shingai Choto</div>
+    </footer>
+
+    <button id="backToTop" class="btn btn-brand" type="button" aria-label="Back to top">Top</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
