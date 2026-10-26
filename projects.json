@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Makeover App",
+    "category": "Web App",
+    "description": "An online marketplace that connects home builders with customers.",
+    "technologies": ["HTML", "CSS", "Bootstrap"],
+    "link": "https://github.com/shingai7/Makeover-App"
+  },
+  {
+    "title": "Makeovers Landing Page",
+    "category": "Landing Page",
+    "description": "The landing page for the Makeovers marketplace, introducing the service to home builders and customers.",
+    "technologies": ["HTML", "CSS", "Bootstrap"],
+    "link": "https://github.com/shingai7/Makeovers-landing-page"
+  },
+  {
+    "title": "Diamond Tech Landing Page",
+    "category": "Landing Page",
+    "description": "An individual Bootstrap project building a responsive landing page for Diamond Tech.",
+    "technologies": ["HTML", "CSS", "Bootstrap"],
+    "link": "https://github.com/shingai7/Bootstrap-individual-project"
+  },
+  {
+    "title": "SA Youth Day Website",
+    "category": "Capstone Project",
+    "description": "A capstone website created for South Africa's Youth Day.",
+    "technologies": ["HTML", "CSS"],
+    "link": "https://github.com/shingai7/capstone-project1"
+  },
+  {
+    "title": "EWSETA Careers Landing Page",
+    "category": "Landing Page",
+    "description": "A landing page built for an EWSETA careers competition.",
+    "technologies": ["HTML", "CSS"],
+    "link": "https://github.com/shingai7/EWSETA-careers-landing-page"
+  },
+  {
+    "title": "Discount Eligibility Calculator",
+    "category": "JavaScript",
+    "description": "Determines discount eligibility based on a customer's age and membership status.",
+    "technologies": ["JavaScript"],
+    "link": "https://github.com/shingai7/Discount-Eligibility-"
+  },
+  {
+    "title": "Square Root Calculator",
+    "category": "JavaScript",
+    "description": "A square root calculator that uses try/catch to handle the error case of a negative number.",
+    "technologies": ["JavaScript"],
+    "link": "https://github.com/shingai7/try-catch-statements"
+  },
+  {
+    "title": "Prime Numbers in a Range",
+    "category": "JavaScript",
+    "description": "A practical challenge using control structures to find prime numbers within a specific range.",
+    "technologies": ["JavaScript"],
+    "link": "https://github.com/shingai7/control-structures"
+  }
+]

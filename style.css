@@ -1,0 +1,165 @@
+/* Portfolio theme: crimson and cream, serif headings, clean body text */
+:root {
+  --brand: #8c1d2f;
+  --brand-dark: #6a1523;
+  --accent: #c8963e;
+  --surface: #ffffff;
+  --page-bg: #faf6f1;
+  --ink: #2a2327;
+  --muted-ink: #6b6168;
+  --line: #e7ddd2;
+  --radius: 14px;
+  --shadow: 0 6px 24px rgba(60, 20, 30, .08);
+}
+
+[data-bs-theme="dark"] {
+  --brand: #e0707f;
+  --brand-dark: #c9525f;
+  --accent: #e0b25c;
+  --surface: #221c20;
+  --page-bg: #171215;
+  --ink: #f1e9ec;
+  --muted-ink: #b3a7ad;
+  --line: #3a3036;
+  --shadow: 0 6px 24px rgba(0, 0, 0, .35);
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  background: var(--page-bg);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+h1, h2, h3, .navbar-brand {
+  font-family: "Playfair Display", Georgia, serif;
+  letter-spacing: -.01em;
+}
+
+a { color: var(--brand); }
+a:hover { color: var(--brand-dark); }
+
+/* Navigation */
+.site-nav {
+  background: var(--surface);
+  border-bottom: 3px solid var(--brand);
+  box-shadow: var(--shadow);
+}
+.site-nav .navbar-brand { color: var(--brand); font-weight: 700; font-size: 1.4rem; }
+.site-nav .nav-link { color: var(--ink); font-weight: 500; padding: .5rem 1rem; border-radius: 999px; }
+.site-nav .nav-link:hover { color: var(--brand); }
+.site-nav .nav-link.active { background: var(--brand); color: #fff; }
+.theme-toggle {
+  border: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: .35rem .9rem;
+  font-size: .9rem;
+}
+.theme-toggle:hover { border-color: var(--brand); color: var(--brand); }
+
+/* Page headings and sections */
+.page-title { font-weight: 700; color: var(--brand); }
+.page-title::after {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 4px;
+  margin-top: .6rem;
+  background: var(--accent);
+  border-radius: 2px;
+}
+.section-title { font-weight: 700; margin-bottom: 1.25rem; }
+main.container { padding-top: 3rem; padding-bottom: 4rem; }
+
+/* Cards */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card:hover { transform: translateY(-4px); }
+.card-title { font-family: "Playfair Display", Georgia, serif; font-weight: 700; }
+.card-footer { background: transparent; border-top: 1px solid var(--line); }
+.text-muted, .text-secondary { color: var(--muted-ink) !important; }
+.meta { color: var(--muted-ink); font-size: .9rem; }
+
+/* Buttons */
+.btn-brand {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+  border-radius: 999px;
+  padding: .6rem 1.6rem;
+  font-weight: 600;
+}
+.btn-brand:hover, .btn-brand:focus { background: var(--brand-dark); border-color: var(--brand-dark); color: #fff; }
+.btn-outline-brand {
+  border: 2px solid var(--brand);
+  color: var(--brand);
+  border-radius: 999px;
+  font-weight: 600;
+  background: transparent;
+}
+.btn-outline-brand:hover, .btn-outline-brand.active { background: var(--brand); color: #fff; }
+
+/* Badges */
+.badge-brand {
+  background: color-mix(in srgb, var(--brand) 12%, transparent);
+  color: var(--brand);
+  border: 1px solid color-mix(in srgb, var(--brand) 35%, transparent);
+  font-weight: 500;
+  padding: .45em .8em;
+  border-radius: 999px;
+}
+
+/* Home */
+.hero { padding: 1rem 0; }
+.profile-img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 6px solid var(--surface);
+  box-shadow: 0 0 0 4px var(--brand), var(--shadow);
+}
+.greeting { color: var(--accent); font-weight: 600; letter-spacing: .08em; text-transform: uppercase; font-size: .85rem; }
+.goals-box {
+  background: var(--surface);
+  border-left: 5px solid var(--brand);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+/* Experience */
+.role-title { font-size: 1.1rem; }
+.card ul { padding-left: 1.1rem; margin-bottom: 0; }
+.card li { margin-bottom: .4rem; }
+
+/* Projects */
+.project-search { max-width: 360px; border-radius: 999px; padding-left: 1.1rem; }
+.filter-bar .btn { margin: 0 .4rem .5rem 0; }
+
+/* Contact */
+.contact-card { text-align: center; padding: 1rem; }
+.contact-icon { font-size: 2.2rem; line-height: 1; }
+
+/* Back to top */
+#backToTop {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  display: none;
+  z-index: 1030;
+}
+
+footer.site-footer { border-top: 1px solid var(--line); color: var(--muted-ink); font-size: .9rem; padding: 1.5rem 0; }
+
+@media (max-width: 576px) {
+  .profile-img { width: 10rem; height: 10rem; }
+}
